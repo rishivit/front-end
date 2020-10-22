@@ -12,7 +12,7 @@ import {
   AutoComplete,
 } from 'antd';
 import { QuestionCircleOutlined } from '@ant-design/icons';
-
+// import './register-form.styles.css';
 const { Option } = Select;
 const AutoCompleteOption = AutoComplete.Option;
 

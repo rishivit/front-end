@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Input, Button, Checkbox } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
-
+// import './login-form.styles.css';
 const NormalLoginForm = () => {
   const onFinish = values => {
     console.log('Received values of form: ', values);
@@ -42,7 +42,7 @@ const NormalLoginForm = () => {
 
       <Form.Item>
         <Button type="primary" htmlType="submit" className="login-form-button">
-          Log in
+          Log in 
         </Button>
         Or <a href="">register now!</a>
       </Form.Item>
