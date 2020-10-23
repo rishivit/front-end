@@ -10,6 +10,7 @@ import {
   Checkbox,
   Button,
   AutoComplete,
+  Space
 } from 'antd';
 import { QuestionCircleOutlined } from '@ant-design/icons';
 // import './register-form.styles.css';
@@ -247,10 +248,12 @@ const RegistrationForm = () => {
         </Checkbox>
       </Form.Item>
       <Form.Item {...tailFormItemLayout}>
+        <Space>
         <Button type="primary" htmlType="submit">
           Register
         </Button> 
         <a href="">Already a User? Sign in </a>
+        </Space>
       </Form.Item>
     </Form>
   );

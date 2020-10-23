@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Form, Input, Button, Checkbox } from 'antd';
+import { Form, Input, Button, Checkbox, Space } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 // import './login-form.styles.css';
 const NormalLoginForm = () => {
@@ -41,10 +41,12 @@ const NormalLoginForm = () => {
       </Form.Item>
 
       <Form.Item>
+        <Space>
         <Button type="primary" htmlType="submit" className="login-form-button">
           Log in 
         </Button>
         Or <a href="">register now!</a>
+        </Space>
       </Form.Item>
     </Form>
   );
