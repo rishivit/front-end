@@ -9,14 +9,13 @@ const Navigation = () => {
     return (
         <Layout className="layout">
             <Header>
-            <div className="navplace" />
             <Row>
                 <Col span={18}></Col>
                 <Col span={6}>
                     <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-                    <Menu.Item key="1">Home</Menu.Item>
-                    <Menu.Item key="2">Login/Register</Menu.Item>
-                    <Menu.Item key="3">About us </Menu.Item>
+                    <Menu.Item key="1"><a href="#home" > Home </a></Menu.Item>
+                    <Menu.Item key="2"><a href="#login" > Login/Register </a></Menu.Item>
+                    <Menu.Item key="3"><a href="about" > About Us </a></Menu.Item>
                     </Menu>
                 </Col>
             </Row>

@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { Form, Input, Button, Checkbox, Space } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
-// import './login-form.styles.css';
+
 const NormalLoginForm = () => {
   const onFinish = values => {
     console.log('Received values of form: ', values);
   };
 
   return (
+    <div id="login">
     <Form
       name="normal_login"
       className="login-form"
@@ -42,13 +43,14 @@ const NormalLoginForm = () => {
 
       <Form.Item>
         <Space>
-        <Button type="primary" htmlType="submit" className="login-form-button">
+        <Button type="primary" htmlType="submit" className="login-form-button" >
           Log in 
         </Button>
-        Or <a href="">register now!</a>
+        Or <a href="#register">register now!</a>
         </Space>
       </Form.Item>
     </Form>
+    </div>
   );
 };
 

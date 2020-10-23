@@ -107,6 +107,7 @@ const RegistrationForm = () => {
   }));
 
   return (
+    <div id="register">
     <Form
       {...formItemLayout}
       form={form}
@@ -252,10 +253,11 @@ const RegistrationForm = () => {
         <Button type="primary" htmlType="submit">
           Register
         </Button> 
-        <a href="">Already a User? Sign in </a>
+        <a href="#login">Already a User? Sign in </a>
         </Space>
       </Form.Item>
     </Form>
+    </div>
   );
 };
 export default RegistrationForm;
