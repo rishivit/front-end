@@ -1,0 +1,14 @@
+.register-form-component {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -30vw;
+    
+    .register-form-header {
+        width: 60vw;
+
+        .register-input {
+            width: 60vw;
+        }
+    }
+}
