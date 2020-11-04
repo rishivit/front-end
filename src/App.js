@@ -7,6 +7,8 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import ErrorPage from './pages/errorpage/errorpage.component';
 import LoginPageComponent from './pages/loginpage/loginpage.page';
 import RegisterPageComponent from './pages/registerpage/registerpage.page';
+// import NavigationPageComponent from './pages/navigationpage/navigation.page';
+import StepFormPageComponent from './pages/stepformpage/stepform.page';
 
 import { createStructuredSelector } from 'reselect';
 import { connect } from 'react-redux';
@@ -48,6 +50,11 @@ class App extends React.Component {
                         exact
                         path="/register"
                         render={() => (currentUser ? <Redirect to="/"></Redirect> : <RegisterPageComponent />)}
+                    ></Route>
+                    <Route
+                        exact
+                        path="/stepform"
+                        render={() => (currentUser ? <Redirect to="/"></Redirect> : <StepFormPageComponent />)}
                     ></Route>
                     <Route path="*" component={ErrorPage}></Route>
                 </Switch>

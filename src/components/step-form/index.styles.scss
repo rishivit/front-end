@@ -1,0 +1,27 @@
+.site-card-wrapper {
+    padding: 30px;
+    border-color: black;
+    border-width: medium;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.content-center{
+    width: 70px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.question-card-component {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -30vw;
+}
+
+.center-text{
+    text-align: center;
+}
