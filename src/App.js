@@ -4,7 +4,6 @@ import './App.css';
 import RegisterPage from './components/register-form/register';
 import LoginPage from './components/login-form/login';
 import Navigation from './components/navigation/navigation';
-
 function App() {
   return (
     <div className="App">

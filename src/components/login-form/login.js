@@ -40,11 +40,10 @@ const NormalLoginForm = () => {
           Forgot password
         </a>
       </Form.Item>
-
       <Form.Item>
         <Space>
         <Button type="primary" htmlType="submit" className="login-form-button" >
-          Log in 
+          Log in
         </Button>
         Or <a href="#register">register now!</a>
         </Space>
