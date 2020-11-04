@@ -22,7 +22,7 @@ export class Question1Component extends Component {
                       <Col span={6}>
                           <Card title="Art Direction" hoverable={true} style={{ height: 200}}>
                              Art Direction
-                          </Card>
+                          </Card
                       </Col>
                       <Col span={6}>
                           <Card title="Web" hoverable={true} style={{ height: 200}}>
