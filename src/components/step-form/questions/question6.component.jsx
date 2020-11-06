@@ -25,6 +25,7 @@ export class Question6Component extends Component {
                 <Form.Item
                     label="Answer 6"
                     name="answer6"
+                    style={{ marginBottom: 30 }}
                     rules={[
                     {
                         required: true,
