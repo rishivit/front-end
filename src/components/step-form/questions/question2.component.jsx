@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button, Card, Col, Form, Input, Layout, Row, Space, Typography } from 'antd';
+import { Button, Card, Col,Divider, Form, Input, Layout, Row, Space, Typography } from 'antd';
 import {ArrowRightOutlined,CheckOutlined} from '@ant-design/icons';
 import '../index.styles.scss';
 
@@ -21,34 +21,44 @@ export class Question2Component extends Component {
         return (
             <>
             <div className='question-card-component'>
-                <Title level={3}> 2 <ArrowRightOutlined /> What is the art direction for? </Title>
-                <Form.Item
-                    label="Answer 2"
-                    name="answer2"
-                    rules={[
-                    {
-                        required: true,
-                        message: 'Please input your answer!',
-                    },
-                    ]}
-                    onChange = {handleChange('ques2')}
-                    defaultValue ={values.ques2}
-                >
-                    <Input />
-                </Form.Item>
 
-            <Space >
-            <Button 
-            type="primary" 
-            onClick={this.continue}>
-                Continue 
-            </Button>
+            <Title level={4} style={{textAlign: "left"}}> 2 <ArrowRightOutlined /> What is the Art Direction for? </Title>
+            <Divider orientation="left"></Divider>
+                <Row gutter={16} style= {{ padding: '0px 0px 20px 0px'}}>
+                <Col span={6}>
+                    <Card title="Packaging" hoverable={true} style={{ height: 200}}>
+                        Product Packaging
+                    </Card>
+                </Col>
+                <Col span={6}>
+                    <Card title="Poster" hoverable={true} style={{ height: 200}}>
+                    Poster or Infographic
+                    </Card>
+                </Col>
+                <Col span={6}>
+                    <Card title="Brand Identity" hoverable={true} style={{ height: 200}}>
+                    Brand Identity
+                    </Card>
+                </Col>
+                <Col span={6}>
+                    <Card title="Marketing" hoverable={true} style={{ height: 200}}>
+                    Online Marketing
+                    </Card>
+                </Col>
+                </Row>
 
-            <Button 
-            onClick={this.back}>
-                Back
-            </Button>
-            </Space>
+                <Space >
+                <Button 
+                type="primary" 
+                onClick={this.continue}>
+                    Continue 
+                </Button>
+
+                <Button 
+                onClick={this.back}>
+                    Back
+                </Button>
+                </Space>
             </div>
             </>
         )

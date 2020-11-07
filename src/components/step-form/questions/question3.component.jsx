@@ -3,7 +3,7 @@ import { Button, Card, Col, Form, Input, Layout, Row, Space, Typography } from '
 import {ArrowRightOutlined,CheckOutlined} from '@ant-design/icons';
 import '../index.styles.scss';
 
-const { Title } = Typography;
+const { Text, Title } = Typography;
 
 export class Question3Component extends Component {
     continue = e => {
@@ -22,6 +22,8 @@ export class Question3Component extends Component {
             <>
             <div className='question-card-component'>
                 <Title level={3}> 3 <ArrowRightOutlined /> What's your name? </Title>
+                <Title level={4} style={{ strong: false, marginBottom: 30}}> We'll use this for future communications </Title>
+
                 <Form.Item
                     label="Answer 3"
                     name="answer3"

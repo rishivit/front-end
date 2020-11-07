@@ -40,7 +40,7 @@ export class Question1Component extends Component {
                           </Card>
                       </Col>
                     </Row>
-
+    
               <Button
               type="primary"
               onClick={this.continue}>

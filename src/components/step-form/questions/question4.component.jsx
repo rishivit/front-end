@@ -21,7 +21,7 @@ export class Question4Component extends Component {
         return (
             <>
             <div className='question-card-component'>
-                <Title level={3}> 4 <ArrowRightOutlined /> And what's the name of your company? </Title>
+                <Title level={3} style={{ marginBottom: 30 }}> 4 <ArrowRightOutlined /> And what's the name of your company? </Title>
                 <Form.Item
                     label="Answer 4"
                     name="answer4"

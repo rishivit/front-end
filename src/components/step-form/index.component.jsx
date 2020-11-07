@@ -109,6 +109,8 @@ export class StepFormIndexComponent extends Component {
                 );
             case 8:
                 return <Success />;
+            default:
+                return <p> Error </p>;
         }
     }
 }
