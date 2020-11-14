@@ -1,7 +1,7 @@
 {
   "hooks": {
-    "post-checkout": "yarn",
-    "pre-commit": "yarn prettier:fix",
+    "post-checkout": "npm install",
+    "pre-commit": "npm run prettier:fix",
     "post-commit": "git status"
   }
 }
