@@ -39,13 +39,13 @@ export class Question6Component extends Component {
                 </Form.Item>
 
             <Space >
-            <Button 
-            type="primary" 
+            <Button
+            type="primary"
             onClick={this.continue}>
-                Continue 
+                Continue
             </Button>
 
-            <Button 
+            <Button
             onClick={this.back}>
                 Back
             </Button>

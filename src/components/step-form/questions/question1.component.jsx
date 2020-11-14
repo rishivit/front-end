@@ -10,6 +10,7 @@ export class Question1Component extends Component {
         e.preventDefault();
         this.props.nextStep();
     }
+
     render() {
         const {values, handleChange } = this.props;
         return (
@@ -21,7 +22,7 @@ export class Question1Component extends Component {
                     <Row gutter={16} style= {{ padding: '0px 0px 20px 0px'}}>
                       <Col span={6}>
                           <Card title="Art Direction" hoverable={true} style={{ height: 200}}>
-                             Art Direction
+                          Art Direction
                           </Card>
                       </Col>
                       <Col span={6}>
@@ -40,7 +41,7 @@ export class Question1Component extends Component {
                           </Card>
                       </Col>
                     </Row>
-    
+
               <Button
               type="primary"
               onClick={this.continue}>
