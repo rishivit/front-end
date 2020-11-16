@@ -24,11 +24,6 @@ export class Question1Component extends Component {
                 <Divider orientation="left"></Divider>
                     <Row gutter={16} style= {{ padding: '0px 0px 20px 0px'}}>
                       <Col span={6}>
-<<<<<<< HEAD
-                          <Card title="Art Direction" hoverable={true} style={{ height: 200}}>
-                          Art Direction
-                          </Card>
-=======
                       <Card
                         hoverable
                         style={{ width: 240 }}
@@ -36,7 +31,6 @@ export class Question1Component extends Component {
                        >
                         <Meta title="Europe Street beat" description="www.instagram.com" />
                       </Card>
->>>>>>> ad173322d6b0508bcb842f8ecd2b08111f28f5a7
                       </Col>
                       <Col span={6}>
                       <Card
