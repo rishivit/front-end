@@ -136,7 +136,7 @@ class RegisterFormComponent extends React.Component {
                                     // InputProps={{
                                     //     endAdornment: (
                                     //       <InputAdornment position="end">
-                                    //        {this.visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />} 
+                                    //        {this.visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />}
                                     //       </InputAdornment>
                                     //     ),
                                     // }}
@@ -157,7 +157,7 @@ class RegisterFormComponent extends React.Component {
                                 >
                                     Sign up
                                 </Button>
-                                or 
+                                or
                                 <Link to="/login">
                                     Log in
                                 </Link>
