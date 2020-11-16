@@ -1,14 +1,22 @@
 .register-form-component {
     position: absolute;
-    top: 30%;
-    left: 50%;
+    top: 20%;
+    left: 48%;
     margin-left: -30vw;
     
     .register-form-header {
         width: 60vw;
 
         .register-input {
-            width: 60vw;
+            width: 30vw;
         }
     }
+}
+
+.custom-register-card{
+    margin: 50px;
+    margin-left: 115px;
+    margin-bottom: 54px;
+    height: 650px;
+    width: 1300px;
 }
