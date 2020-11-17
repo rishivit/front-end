@@ -13,9 +13,9 @@ import { setCurrentUser } from '../../redux/user/user.actions';
 import { connect } from 'react-redux';
 import TextField from '@material-ui/core/TextField';
 import InputAdornment from '@material-ui/core/InputAdornment';
-import FormControl from '@material-ui/core/FormControl';
-import InputLabel from '@material-ui/core/InputLabel';
 import IconButton from '@material-ui/core/IconButton';
+import Visibility from '@material-ui/icons/Visibility';
+import VisibilityOff from '@material-ui/icons/VisibilityOff';
 
 class RegisterFormComponent extends React.Component {
     constructor(props) {
@@ -32,6 +32,10 @@ class RegisterFormComponent extends React.Component {
         const { value, name } = event.target;
 
         this.setState({ [name]: value });
+    };
+
+    handleClickShowPassword = () => {
+        this.setState({ ...this.state, visible: !this.state.visible });
     };
 
     handleRegister = async () => {
@@ -112,42 +116,33 @@ class RegisterFormComponent extends React.Component {
                                     }}
                                     onChange={this.handleChange}
                                 />
-                                {/* <Input.Password
-                                    className="register-input"
-                                    size="large"
-                                    name="password"
-                                    placeholder="Enter your password"
-                                    iconRender={visible => (visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />)}
-                                    onChange={this.handleChange}
-                                /> */}
                                 <TextField
-                                    id="standard-full-width"
+                                    id="standard-adornment-password"
                                     className="register-input"
-                                    size="large"
                                     name="password"
+                                    type={this.state.visible ? 'text' : 'password'}
+                                    value={this.state.password}
                                     label = {<span style={{ fontSize: '1.1rem' }}> Password</span>}
                                     style={{ margin: 8 }}
                                     placeholder="Enter your password"
                                     fullWidth
                                     margin="normal"
+                                    onChange={this.handleChange}
                                     InputLabelProps={{
                                         shrink: true,
                                     }}
-                                    // InputProps={{
-                                    //     endAdornment: (
-                                    //       <InputAdornment position="end">
-                                    //        {this.visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />} 
-                                    //       </InputAdornment>
-                                    //     ),
-                                    // }}
                                     InputProps={{
                                         endAdornment: (
                                           <InputAdornment position="end">
-                                            {}
+                                            <IconButton
+                                                aria-label="toggle password visibility"
+                                                onClick={this.handleClickShowPassword}
+                                            >
+                                                {this.state.visible ? <Visibility /> : <VisibilityOff />}
+                                            </IconButton>
                                           </InputAdornment>
                                         ),
                                     }}
-                                    onChange={this.handleChange}
                                 />
                                 <Space size={15}>
                                 <Button
