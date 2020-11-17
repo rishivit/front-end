@@ -12,6 +12,7 @@ export class Question1Component extends Component {
         e.preventDefault();
         this.props.nextStep();
     }
+
     render() {
         const {values, handleChange } = this.props;
         return (
@@ -59,7 +60,7 @@ export class Question1Component extends Component {
                       </Card>
                       </Col>
                     </Row>
-    
+
               <Button
               type="primary"
               onClick={this.continue}>

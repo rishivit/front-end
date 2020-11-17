@@ -152,7 +152,7 @@ class RegisterFormComponent extends React.Component {
                                 >
                                     Sign up
                                 </Button>
-                                or 
+                                or
                                 <Link to="/login">
                                     Log in
                                 </Link>

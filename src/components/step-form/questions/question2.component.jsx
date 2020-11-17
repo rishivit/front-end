@@ -16,6 +16,7 @@ export class Question2Component extends Component {
         this.props.prevStep();
     }
 
+
     render() {
         const {values, handleChange } = this.props;
         return (
@@ -48,13 +49,13 @@ export class Question2Component extends Component {
                 </Row>
 
                 <Space >
-                <Button 
-                type="primary" 
+                <Button
+                type="primary"
                 onClick={this.continue}>
-                    Continue 
+                    Continue
                 </Button>
 
-                <Button 
+                <Button
                 onClick={this.back}>
                     Back
                 </Button>

@@ -30,13 +30,13 @@ export class Confirm extends Component {
                 {ques6} <br />
 
             <Space >
-            <Button 
-            type="primary" 
+            <Button
+            type="primary"
             onClick={this.continue}>
                 Confirm and Continue
             </Button>
 
-            <Button 
+            <Button
             onClick={this.back}>
                 Back
             </Button>

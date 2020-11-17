@@ -57,13 +57,13 @@ export class Question5Component extends Component {
                 <Row>
                     <Col>
                         <Space >
-                        <Button 
-                        type="primary" 
+                        <Button
+                        type="primary"
                         onClick={this.continue}>
-                            Continue 
+                            Continue
                         </Button>
 
-                        <Button 
+                        <Button
                         onClick={this.back}>
                             Back
                         </Button>
